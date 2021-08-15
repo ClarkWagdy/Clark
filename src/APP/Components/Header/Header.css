@@ -1,0 +1,118 @@
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+@font-face {
+    font-family: "Prestige";
+    src: local("Prestige"),
+     url("./../Fonts/Prestige\ Signature\ Script\ -\ Demo.ttf") format("truetype");
+   }
+
+.clark-logo{
+    font-family: Prestige;
+    font-size: 30px !important;
+    
+}
+.clark-logo:hover{
+    color: tomato;
+}
+.clark-title{
+    margin-top: -9px;
+    line-height: 0;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: tomato;
+}
+
+
+
+
+/* btn */
+
+/* // BOUTTON // */
+.box {
+    width: 35px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* // CONTAINER-LIGNES // */
+  .container-lignes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 30px;
+    pointer-events: none;
+  }
+  
+  /* // LIGNE // */
+  .ligne {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+  
+  .ligne:nth-child(1) {
+    top: 0;
+  }
+  
+  .ligne:nth-child(2) {
+    top: 10px;
+  }
+  
+  .ligne:nth-child(3) {
+    top: 20px;
+  }
+  
+  /* // ANIMATION BOUTTON B1 // */
+  .b1 .ligne:nth-child(1),
+  .b1 .ligne:nth-child(3) {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out, top 0.3s 0.3s ease-in-out;
+  }
+  
+  .b1 .ligne:nth-child(2) {
+    transition: opacity 0.3s 0.3s ease-in-out;
+  }
+  
+  .b1.active .ligne:nth-child(1) {
+    top: 15px;
+    transform: rotate(45deg);
+    transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+    background-color: tomato;
+  }
+  
+  .b1.active .ligne:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .b1.active .ligne:nth-child(3) {
+    top: 15px;
+    transform: rotate(-45deg);
+    transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+    background-color: tomato;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
